@@ -221,6 +221,10 @@ sub {
     margin-right: 5%;
 }
 
+.width-65 {
+    width: 65%;
+    margin-right: 5%;
+}
 .last {
     margin-right: 0 !important;
     clear: right;
