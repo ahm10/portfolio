@@ -1064,6 +1064,20 @@ div.pp_default .pp_description {
     8. Resume Section CSS
 ====================================== */
 
+/* Ensure the experience section has proper height */
+#experience .section-wrapper {
+    min-height: auto;
+    overflow: visible;
+}
+
+#experience .content-1300 {
+    overflow: visible;
+}
+
+#experience .one-half {
+    overflow: visible;
+}
+
 ul.timeline-holder {
     margin: 0;
     padding: 0 0 0 55px;
@@ -1973,4 +1987,72 @@ p.contact-submit-holder {
 .a-item:hover .text{
     top: 1.4rem;
    
+}
+
+/* ===================================
+    Custom Timeline Fixes
+====================================== */
+
+.timeline-event-content {
+    line-height: 160%;
+    text-align: left;
+    margin-left: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.timeline-event-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.timeline-event-content strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.timeline-event-content .text-white {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+li.timeline-event {
+    margin: 0 0 60px 60px;
+    position: relative;
+    padding-top: 5px;
+    list-style: none;
+    transition: .3s;
+    min-height: 100px;
+}
+
+ul.timeline-holder {
+    margin: 0;
+    padding: 0 0 0 55px;
+    overflow: visible;
+}
+
+/* Ensure proper spacing for long content */
+.timeline-event-content h6 {
+    margin-bottom: 15px;
+}
+
+/* Fix for mobile responsiveness */
+@media screen and (max-width: 767px) {
+    .timeline-event-content {
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+    
+    li.timeline-event {
+        margin-left: 30px;
+        margin-bottom: 40px;
+    }
+    
+    ul.timeline-holder {
+        padding-left: 70px;
+    }
+    
+    .timeline-event-date {
+        left: -100px;
+    }
 }
