@@ -506,10 +506,17 @@ img.my-info-signature {
 .content-right {
     margin-left: 380px;
     width: calc(100% - 380px);
+    height: auto !important;
+    overflow: visible;
 }
 
 .content-right-wrapper > div:last-of-type {
     padding-bottom: 150px;
+}
+
+.content-right-wrapper {
+    height: auto !important;
+    overflow: visible;
 }
 
 .section {
@@ -1068,14 +1075,29 @@ div.pp_default .pp_description {
 #experience .section-wrapper {
     min-height: auto;
     overflow: visible;
+    height: auto !important;
+    padding-bottom: 100px;
 }
 
 #experience .content-1300 {
     overflow: visible;
+    height: auto !important;
 }
 
 #experience .one-half {
     overflow: visible;
+    height: auto !important;
+}
+
+#experience {
+    height: auto !important;
+    min-height: auto !important;
+}
+
+#experience .section {
+    height: auto !important;
+    min-height: auto !important;
+    padding-bottom: 50px;
 }
 
 ul.timeline-holder {
@@ -1101,7 +1123,7 @@ li.timeline-event:before {
     height: calc(100% - 20px);
     position: absolute;
     background-color: #f37b83;
-    left: -30px;
+    left: -60px;
     top: 51px;
 }
 
@@ -1118,7 +1140,7 @@ li.timeline-event span.timeline-circle:after {
     position: absolute;
     width: 19px;
     height: 19px;
-    left: -8px;
+    left: -38px;
     top: 11px;
     border-radius: 90%;
     background-color: #f37b83;    
@@ -1133,7 +1155,7 @@ li.timeline-event:hover span.timeline-circle:after {
 span.timeline-circle {
     position: absolute;
     top: 0;
-    left: -30px;
+    left: -60px;
 }
 
 span.timeline-circle:before {
@@ -1144,7 +1166,7 @@ span.timeline-circle:before {
     border-radius: 90%;
     border: 3px solid #f37b83;
     position: absolute;
-    left: -16px;
+    left: -46px;
     top: 3px;
     z-index: 1;
     transition: .3s;
@@ -1152,7 +1174,7 @@ span.timeline-circle:before {
 
 .timeline-event-date {
     position: absolute;
-    left: -115px;
+    left: -145px;
     top: 2px;
     transition: .3s;
     color: #f37b83;
@@ -1996,7 +2018,7 @@ p.contact-submit-holder {
 .timeline-event-content {
     line-height: 160%;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 80px;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
@@ -2017,7 +2039,7 @@ p.contact-submit-holder {
 }
 
 li.timeline-event {
-    margin: 0 0 60px 60px;
+    margin: 0 0 60px 90px;
     position: relative;
     padding-top: 5px;
     list-style: none;
@@ -2027,8 +2049,10 @@ li.timeline-event {
 
 ul.timeline-holder {
     margin: 0;
-    padding: 0 0 0 55px;
+    padding: 0 0 0 85px;
     overflow: visible;
+    height: auto !important;
+    min-height: auto !important;
 }
 
 /* Ensure proper spacing for long content */
